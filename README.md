@@ -1,4 +1,4 @@
-# jokes-and-quotes-generator
+# Jokes and Quotes Generator Website
 Simple website made with Flask, CSS, and HTML to generate jokes and quotes for the user.
 
 Find the website <a href="http://jokes-quotes-gen.herokuapp.com/">here </a>
