@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="description" content="Jokes and Famous Celebrity Quote Generator">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="shortcut icon" href="http://www.clker.com/cliparts/U/d/L/z/P/7/orange-gear.svg.med.png" type="image/x-icon"/>
+        <title>Homepage - Welcome</title>
+        <style>
+            h1 {
+            font-family: "Open Sans", sans-serif;
+            }
+            body {
+                font-family: "Open Sans", sans-serif;
+                font-size:15px;
+                line-height: 1.5;
+                padding:0;
+                margin: 0;
+                background-color: #f4f4f4;
+            }
+
+            /*Global*/
+            .container{
+                width:80%;
+                margin:auto;
+                overflow:hidden;
+            }
+
+            ul{
+                margin: 0;
+                padding: 0;
+
+            }
+            .button_1{
+                height:38px;
+                background:#e8491d;
+                border:0;
+                padding: left 20px;
+                padding: right 20px;
+            }
+
+            /*Header*/
+            header{
+                background:#35424a;
+                color: #ffffff;
+                padding-top: 30px;
+                min-height: 70px;
+                border-bottom: #e8491d 3px solid;
+            }
+
+            header a{
+                color:#ffffff;
+                text-decoration: none;
+                text-transform: uppercase;
+                font: size 16px;
+                
+            }
+
+            
+
+            header li{
+                float: left;
+                display:inline;
+                padding: 0 20px 0 20px;
+            }
+
+            header #branding{
+                float:left;
+            }
+            header #branding h1{
+                margin:0;
+            }
+
+            header nav{
+                float:right;
+                margin-top: 10px;
+            }
+
+            header .highlight, header .current a{
+                color:#e8491d;
+                font-weight: bold;
+            }
+            header a:hover{
+                color:#cccccc;
+                font-weight: bold;
+                border-bottom: 3px solid #e8491d;
+            }
+
+            /*Showcase*/
+            #showcase{
+                min-height: 400px;
+                background:url("https://wallpaperaccess.com/full/340696.jpg"), no-repeat;
+                text-align: center;
+                color: #ffffff;
+            }
+            #showcase h1{
+                margin-top: 100px;
+                font-size: 55px;
+                margin-bottom: 10px;
+            }
+            #showcase p{
+                font-size: 20px;
+            }
+
+            /*contact*/
+            #contact{
+                padding:15px;
+                color:#ffffff;
+                background:#35424a;
+            }
+            #contact h1{
+                float:left;
+            }
+
+            #contact form{
+                float:right;
+                margin-top: 15px;
+            }
+
+            #contact input{
+                padding:4px;
+                height: 25px;
+                width: 250px;
+            }
+
+            /*Boxes*/
+
+            #boxes{
+                margin-top: 20px;
+            }
+
+            #boxes .box{
+                float:left;
+                width: 30%;
+                padding: 10px;
+                text-align: center;
+            }
+
+            #boxes .box img{
+                width:90px;
+
+            }
+
+            footer{
+                padding:20px;
+                margin-top: 20px;
+                color:#ffffff;
+                background-color: #e8491d;
+                text-align: center;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <div id="branding">
+                    <h1>Jokes and Quotes <span class="highlight">Generator</span></h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li class="current"><a href="/">HOME</a></li>
+                        <li><a href="/jokes">JOKES</a></li>
+                        <li><a href="/quotes">QUOTES</a></li>
+                        <li><a href="/about">ABOUT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section id="showcase">
+            <div class="container">
+                <h1>Random Funny Jokes and Famous Quotes</h1>
+                <p>Generate some funny jokes and cool quotes from some famous people. Have some fun!</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h1>Enter email for contacting!</h1>
+                <form>
+                    <input type="email" placeholder="Enter Email....">
+                    <button type="submit" class="button_1">Send</button>
+
+                </form>
+            </div>
+        </section>
+        
+        <section id="boxes">
+            <div class="container">
+                <div class="box">
+                    <a href="/jokes"><img src="https://i.pinimg.com/favicons/97bbf97bbe5a834c71e3e1343bbb3b89a29de4ac92d4f7760264a9be.png?e3c975e7d266d4eaff7df316f7d4c1b1" alt="Jokes"></a>
+                    <h3>Jokes</h3>
+                    <p>Generate jokes from a variety of genres such as dad jokes, geeky jokes, and more, gathered from various APIs online.</p>
+                </div>
+                <div class="box">
+                    <a href="/quotes"><img src="https://image.flaticon.com/icons/png/512/40/40341.png"></a>
+                    
+                    <h3>Quotes</h3>
+                    <p>Generate quotes from a variety of famous celebrities such as Chuck Norris, Kanye West, and others!</p>
+                </div>
+                <div class="box">
+                    <a href ="#"><img src="https://images-na.ssl-images-amazon.com/images/I/81kcFz3MEQL.png"></a>
+                    
+                    <h3>Meme Creator (To be added soon...)</h3>
+                    <p>Create a meme with top caption and an optional bottom caption from ImgFlip, using common meme templates online.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Nicholas Zhang, Copyright © 2021</p>
+        </footer>
+
+    </body>
+
+</html>

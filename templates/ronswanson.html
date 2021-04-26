@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="description" content="Jokes and Famous Celebrity Quote Generator">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="shortcut icon" href="http://www.clker.com/cliparts/U/d/L/z/P/7/orange-gear.svg.med.png" type="image/x-icon"/>
+        <title>Ron Swanson Quote Generator</title>
+
+        <style>
+              /*Button*/
+              a.button1{ display:inline-block; padding:0.35em 1.2em; border:0.1em solid #e8491d; margin:0 0.3em 0.3em 0; border-radius:0.12em; box-sizing: border-box; text-decoration:none; font-family:'Roboto',sans-serif; font-weight:300; color:#e8491d; text-align:center; transition: all 0.2s; } a.button1:hover{ color:#000000; background-color:#e8491d; } @media all and (max-width:30em){ a.button1{ display:block; margin:0.4em auto; } }
+            h1 {
+            font-family: "Open Sans", sans-serif;
+            }
+            body {
+                font-family: "Open Sans", sans-serif;
+                font-size:15px;
+                line-height: 1.5;
+                padding:0;
+                margin: 0;
+                background-color: #f4f4f4;
+            }
+
+            /*Global*/
+            .container{
+                width:80%;
+                margin:auto;
+                overflow:hidden;
+            }
+
+            ul{
+                margin: 0;
+                padding: 0;
+
+            }
+            .button_1{
+                height:38px;
+                background:#e8491d;
+                border:0;
+                padding: left 20px;
+                padding: right 20px;
+            }
+
+            /*Header*/
+            header{
+                background:#35424a;
+                color: #ffffff;
+                padding-top: 30px;
+                min-height: 70px;
+                border-bottom: #e8491d 3px solid;
+            }
+
+            header a{
+                color:#ffffff;
+                text-decoration: none;
+                text-transform: uppercase;
+                font: size 16px;
+                
+            }
+
+            
+
+            header li{
+                float: left;
+                display:inline;
+                padding: 0 20px 0 20px;
+            }
+
+            header #branding{
+                float:left;
+            }
+            header #branding h1{
+                margin:0;
+            }
+
+            header nav{
+                float:right;
+                margin-top: 10px;
+            }
+
+            header .highlight, header .current a{
+                color:#e8491d;
+                font-weight: bold;
+            }
+            header a:hover{
+                color:#cccccc;
+                font-weight: bold;
+                border-bottom: 3px solid #e8491d;
+            }
+
+
+            /*contact*/
+            #contact{
+                padding:15px;
+                color:#ffffff;
+                background:#35424a;
+            }
+            #contact h1{
+                float:left;
+            }
+
+            #contact form{
+                float:right;
+                margin-top: 15px;
+            }
+
+            #contact input{
+                padding:4px;
+                height: 25px;
+                width: 250px;
+            }
+
+            /*Boxes*/
+
+            #boxes{
+                margin-top: 20px;
+            }
+
+            #boxes .box{
+                float:left;
+                width: 30%;
+                padding: 10px;
+                text-align: center;
+            }
+
+            #boxes .box img{
+                width:90px;
+
+            }
+
+            footer{
+                padding:20px;
+                margin-top: 20px;
+                color:#ffffff;
+                background-color: #e8491d;
+                text-align: center;
+            }
+
+            /*Sidebar*/
+            aside#sidebar{
+                float:right;
+                width:30%;
+                margin-top: 10px;
+            }
+
+            #footer{
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 2.5rem;
+            }
+
+            /*Main-col*/
+            article#main-col{
+                float:left;
+                width:65%;
+            }
+
+            .dark{
+                padding:15px;
+                background: #35424a;
+                color: #ffffff;
+                margin-top:10px;
+                margin-bottom:10px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <div id="branding">
+                    <h1>Jokes and Quotes <span class="highlight">Generator</span></h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="/">HOME</a></li>
+                        <li><a href="/jokes">JOKES</a></li>
+                        <li><a href="/quotes">QUOTES</a></li>
+                        <li><a href="/about">ABOUT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section id="contact">
+            <div class="container">
+                <h1>Enter email for contacting!</h1>
+                <form>
+                    <input type="email" placeholder="Enter Email....">
+                    <button type="submit" class="button_1">Send</button>
+
+                </form>
+            </div>
+        </section>
+        
+        <section id="main">
+            <div class="container">
+               <article id="main-col">
+                    <h1 class="page-title">Ron Swanson Quote Generated! ✔️</h1>
+                    <h1 style="font-weight: 400;">
+                        Here is your quote: <b>{{swansonq}}</b>
+                        <br>
+                        <br>
+                        <br>
+                        <img src="https://www.incimages.com/uploaded_files/image/1920x1080/parks-and-recreation_32716.jpg" width=480 length=270 >
+                    </h1>
+                    
+                    <a href="/quotes" class="button1">Click Here to return to the Jokes Page</a>
+               </article>
+
+            </div>
+        </section>
+
+        <footer id="footer">
+            <p>Nicholas Zhang, Copyright © 2021</p>
+        </footer>
+
+    </body>
+
+</html>

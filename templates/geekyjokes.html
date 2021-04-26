@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="description" content="Jokes and Famous Celebrity Quote Generator">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="shortcut icon" href="http://www.clker.com/cliparts/U/d/L/z/P/7/orange-gear.svg.med.png" type="image/x-icon"/>
+        <title>Geeky Joke Generator</title>
+
+        <style>
+              /*Button*/
+              a.button1{ display:inline-block; padding:0.35em 1.2em; border:0.1em solid #e8491d; margin:0 0.3em 0.3em 0; border-radius:0.12em; box-sizing: border-box; text-decoration:none; font-family:'Roboto',sans-serif; font-weight:300; color:#e8491d; text-align:center; transition: all 0.2s; } a.button1:hover{ color:#000000; background-color:#e8491d; } @media all and (max-width:30em){ a.button1{ display:block; margin:0.4em auto; } }
+            h1 {
+            font-family: "Open Sans", sans-serif;
+            }
+            body {
+                font-family: "Open Sans", sans-serif;
+                font-size:15px;
+                line-height: 1.5;
+                padding:0;
+                margin: 0;
+                background-color: #f4f4f4;
+            }
+
+            /*Global*/
+            .container{
+                width:80%;
+                margin:auto;
+                overflow:hidden;
+            }
+
+            ul{
+                margin: 0;
+                padding: 0;
+
+            }
+            .button_1{
+                height:38px;
+                background:#e8491d;
+                border:0;
+                padding: left 20px;
+                padding: right 20px;
+            }
+
+            /*Header*/
+            header{
+                background:#35424a;
+                color: #ffffff;
+                padding-top: 30px;
+                min-height: 70px;
+                border-bottom: #e8491d 3px solid;
+            }
+
+            header a{
+                color:#ffffff;
+                text-decoration: none;
+                text-transform: uppercase;
+                font: size 16px;
+                
+            }
+
+            
+
+            header li{
+                float: left;
+                display:inline;
+                padding: 0 20px 0 20px;
+            }
+
+            header #branding{
+                float:left;
+            }
+            header #branding h1{
+                margin:0;
+            }
+
+            header nav{
+                float:right;
+                margin-top: 10px;
+            }
+
+            header .highlight, header .current a{
+                color:#e8491d;
+                font-weight: bold;
+            }
+            header a:hover{
+                color:#cccccc;
+                font-weight: bold;
+                border-bottom: 3px solid #e8491d;
+            }
+
+
+            /*contact*/
+            #contact{
+                padding:15px;
+                color:#ffffff;
+                background:#35424a;
+            }
+            #contact h1{
+                float:left;
+            }
+
+            #contact form{
+                float:right;
+                margin-top: 15px;
+            }
+
+            #contact input{
+                padding:4px;
+                height: 25px;
+                width: 250px;
+            }
+
+            /*Boxes*/
+
+            #boxes{
+                margin-top: 20px;
+            }
+
+            #boxes .box{
+                float:left;
+                width: 30%;
+                padding: 10px;
+                text-align: center;
+            }
+
+            #boxes .box img{
+                width:90px;
+
+            }
+
+            footer{
+                padding:20px;
+                margin-top: 20px;
+                color:#ffffff;
+                background-color: #e8491d;
+                text-align: center;
+            }
+
+            /*Sidebar*/
+            aside#sidebar{
+                float:right;
+                width:30%;
+                margin-top: 10px;
+            }
+
+            #footer{
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 2.5rem;
+            }
+
+            /*Main-col*/
+            article#main-col{
+                float:left;
+                width:65%;
+            }
+
+            .dark{
+                padding:15px;
+                background: #35424a;
+                color: #ffffff;
+                margin-top:10px;
+                margin-bottom:10px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <div id="branding">
+                    <h1>Jokes and Quotes <span class="highlight">Generator</span></h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="/">HOME</a></li>
+                        <li><a href="/jokes">JOKES</a></li>
+                        <li><a href="/quotes">QUOTES</a></li>
+                        <li><a href="/about">ABOUT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section id="contact">
+            <div class="container">
+                <h1>Enter email for contacting!</h1>
+                <form>
+                    <input type="email" placeholder="Enter Email....">
+                    <button type="submit" class="button_1">Send</button>
+
+                </form>
+            </div>
+        </section>
+        
+        <section id="main">
+            <div class="container">
+               <article id="main-col">
+                    <h1 class="page-title">Geeky Joke Generated! ✔️</h1>
+                    <h1 style="font-weight: 400;">
+                        Here is your joke: <b>{{geekjoke}}</b>
+                        <br>
+                        <br>
+                        <br>
+                        <img src="data:image/jpeg;base64,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" >
+                    </h1>
+                    
+                    <a href="/jokes" class="button1">Click Here to return to the Jokes Page</a>
+               </article>
+
+            </div>
+        </section>
+
+        <footer id="footer">
+            <p>Nicholas Zhang, Copyright © 2021</p>
+        </footer>
+
+    </body>
+
+</html>
