@@ -1,273 +1,297 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-        <meta charset="utf-8">
-        <meta name="description" content="Jokes and Famous Celebrity Quote Generator">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="shortcut icon" href="http://www.clker.com/cliparts/U/d/L/z/P/7/orange-gear.svg.med.png" type="image/x-icon"/>
-        <title>About - Nicholas Zhang</title>
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
 
-        <style>
-            h1 {
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="description" content="Jokes and Famous Celebrity Quote Generator">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="http://www.clker.com/cliparts/U/d/L/z/P/7/orange-gear.svg.med.png"
+        type="image/x-icon" />
+    <title>About - Nicholas Zhang</title>
+
+    <style>
+        h1 {
             font-family: "Open Sans", sans-serif;
-            }
-            body {
-                font-family: "Open Sans", sans-serif;
-                font-size:15px;
-                line-height: 1.5;
-                padding:0;
-                margin: 0;
-                background-color: #f4f4f4;
-            }
+        }
 
-            /*Global*/
-            .container{
-                width:80%;
-                margin:auto;
-                overflow:hidden;
-            }
+        body {
+            font-family: "Open Sans", sans-serif;
+            font-size: 15px;
+            line-height: 1.5;
+            padding: 0;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
 
-            ul{
-                margin: 0;
-                padding: 0;
+        /*Global*/
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
 
-            }
-            .button_1{
-                height:38px;
-                background:#e8491d;
-                border:0;
-                padding: left 20px;
-                padding: right 20px;
-            }
+        ul {
+            margin: 0;
+            padding: 0;
 
-            /*Header*/
-            header{
-                background:#35424a;
-                color: #ffffff;
-                padding-top: 30px;
-                min-height: 70px;
-                border-bottom: #e8491d 3px solid;
-            }
+        }
 
-            header a{
-                color:#ffffff;
-                text-decoration: none;
-                text-transform: uppercase;
-                font: size 16px;
-                
-            }
+        .button_1 {
+            height: 38px;
+            background: #e8491d;
+            border: 0;
+            padding: left 20px;
+            padding: right 20px;
+        }
 
-            
+        /*Header*/
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
 
-            header li{
-                float: left;
-                display:inline;
-                padding: 0 20px 0 20px;
-            }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font: size 16px;
 
-            header #branding{
-                float:left;
-            }
-            header #branding h1{
-                margin:0;
-            }
-
-            header nav{
-                float:right;
-                margin-top: 10px;
-            }
-
-            header .highlight, header .current a{
-                color:#e8491d;
-                font-weight: bold;
-            }
-            header a:hover{
-                color:#cccccc;
-                font-weight: bold;
-                border-bottom: 3px solid #e8491d;
-            }
+        }
 
 
-            /*contact*/
-            #contact{
-                padding:15px;
-                color:#ffffff;
-                background:#35424a;
-            }
-            #contact h1{
-                float:left;
-            }
 
-            #contact form{
-                float:right;
-                margin-top: 15px;
-            }
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
 
-            #contact input{
-                padding:4px;
-                height: 25px;
-                width: 250px;
-            }
+        header #branding {
+            float: left;
+        }
 
-            /*Boxes*/
+        header #branding h1 {
+            margin: 0;
+        }
 
-            #boxes{
-                margin-top: 20px;
-            }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
 
-            #boxes .box{
-                float:left;
-                width: 30%;
-                padding: 10px;
-                text-align: center;
-            }
+        header .highlight,
+        header .current a {
+            color: #e8491d;
+            font-weight: bold;
+        }
 
-            #boxes .box img{
-                width:90px;
+        header a:hover {
+            color: #cccccc;
+            font-weight: bold;
+            border-bottom: 3px solid #e8491d;
+        }
 
-            }
 
-            footer{
-                padding:20px;
-                margin-top: 20px;
-                color:#ffffff;
-                background-color: #e8491d;
-                text-align: center;
-            }
+        /*contact*/
+        #contact {
+            padding: 15px;
+            color: #ffffff;
+            background: #35424a;
+        }
 
-            /*Sidebar*/
-            aside#sidebar{
-                float:right;
-                width:30%;
-                margin-top: 10px;
-            }
+        #contact h1 {
+            float: left;
+        }
 
-            #footer{
-                position: absolute;
-                bottom: 0;
-                width: 100%;
-                height: 2.5rem;
-            }
+        #contact form {
+            float: right;
+            margin-top: 15px;
+        }
 
-            /*Main-col*/
-            article#main-col{
-                float:left;
-                width:65%;
-            }
+        #contact input {
+            padding: 4px;
+            height: 25px;
+            width: 250px;
+        }
 
-            .dark{
-                padding:15px;
-                background: #35424a;
-                color: #ffffff;
-                margin-top:10px;
-                margin-bottom:10px;
-            }
+        /*Boxes*/
 
-            input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */;
-  font-family: "Open Sans", sans-serif;
-}
+        #boxes {
+            margin-top: 20px;
+        }
 
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-color: #e8491d;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-family: "Open Sans", sans-serif;
-}
+        #boxes .box {
+            float: left;
+            width: 30%;
+            padding: 10px;
+            text-align: center;
+        }
 
-input[type=email], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
+        #boxes .box img {
+            width: 90px;
 
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-color: #ac3110;
-}
+        }
 
-        </style>
-    </head>
+        footer {
+            padding: 20px;
+            margin-top: 20px;
+            color: #ffffff;
+            background-color: #e8491d;
+            text-align: center;
+        }
 
-    <body>
-        <header>
-            <div class="container">
-                <div id="branding">
-                    <h1>Jokes and Quotes <span class="highlight">Generator</span></h1>
+        /*Sidebar*/
+        aside#sidebar {
+            float: right;
+            width: 30%;
+            margin-top: 10px;
+        }
+
+        #footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 2.5rem;
+        }
+
+        /*Main-col*/
+        article#main-col {
+            float: left;
+            width: 65%;
+        }
+
+        .dark {
+            padding: 15px;
+            background: #35424a;
+            color: #ffffff;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            /* Full width */
+            padding: 12px;
+            /* Some padding */
+            border: 1px solid #ccc;
+            /* Gray border */
+            border-radius: 4px;
+            /* Rounded borders */
+            box-sizing: border-box;
+            /* Make sure that padding and width stays in place */
+            margin-top: 6px;
+            /* Add a top margin */
+            margin-bottom: 16px;
+            /* Bottom margin */
+            resize: vertical
+                /* Allow the user to vertically resize the textarea (not horizontally) */
+            ;
+            font-family: "Open Sans", sans-serif;
+        }
+
+        /* Style the submit button with a specific background color etc */
+        input[type=submit] {
+            background-color: #e8491d;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: "Open Sans", sans-serif;
+        }
+
+        input[type=email],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        /* When moving the mouse over the submit button, add a darker green color */
+        input[type=submit]:hover {
+            background-color: #ac3110;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Jokes and Quotes <span class="highlight">Generator</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/jokes">JOKES</a></li>
+                    <li><a href="/quotes">QUOTES</a></li>
+                    <li><a href="/about">ABOUT</a></li>
+                    <li class="current"><a href="/contact">CONTACT</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="contact">
+        <div class="container">
+            <h1 style='color: #ff0033;'>{{success_message}}</h1>
+        </div>
+    </section>
+    <section id="main">
+        <div class="container">
+            <article id="main-col">
+                <h1 class="page-title" style='text-align: center; font-size: 35px;'>Contact</h1>
+                <form action='/contact' method='POST'>
+                    <label for="fname">First and Last Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name..">
+
+                    <label for="lname">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Your email..">
+
+                    <label for="subject">Message</label>
+                    <textarea id="message" name="message" placeholder="Write your message.."
+                        style="height:200px; font-family: 'Open Sans', sans-serif;"></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </article>
+
+
+
+            <aside id="sidebar">
+                <div class="dark">
+                    <h3>About Me</h3>
+                    <p> I am a junior programmer looking to learn more. I am in high school and my programming interests
+                        are doing competitive programming, learning web development, and
+                        machine learning. I am currently working on getting better at all of these aspects, and this is
+                        a beginning project for web development. I am currently a freshman
+                        at Mission San Jose High school. My other hobbies and interests include swimming, playing
+                        videogames, and some chess.
+                    </p>
                 </div>
-                <nav>
-                    <ul>
-                        <li><a href="/">HOME</a></li>
-                        <li><a href="/jokes">JOKES</a></li>
-                        <li><a href="/quotes">QUOTES</a></li>
-                        <li><a href="/about">ABOUT</a></li>
-                        <li class="current"><a href="/contact">CONTACT</a></li>
+            </aside>
+        </div>
+    </section>
 
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <section id="contact" >
-            <div class="container">
-                <h1 style='color: #4bb543;'>{{success_message}}</h1>
-            </div>
-        </section>
-        <section id="main">
-            <div class="container">
-               <article id="main-col">
-                    <h1 class="page-title" style='text-align: center; font-size: 35px;'>Contact</h1>
-                    <form action='/contact' method='POST'>
-                        <label for="fname">First and Last Name</label>
-                        <input type="text" id="name" name="name" placeholder="Your name..">
+    <footer id="footer">
+        <p>Nicholas Zhang, Copyright © 2021</p>
+    </footer>
 
-                        <label for="lname">Email Address</label>
-                        <input type="email" id="email" name="email" placeholder="Your email..">
-
-                        <label for="subject">Message</label>
-                        <textarea id="message" name="message" placeholder="Write your message.." style="height:200px; font-family: 'Open Sans', sans-serif;"></textarea>
-                    
-                        <input type="submit" value="Submit">
-                    </form>
-               </article>
-
-               
-
-               <aside id="sidebar">
-                   <div class="dark">
-                   <h3>About Me</h3>
-                   <p> I am a junior programmer looking to learn more. I am in high school and my programming interests are doing competitive programming, learning web development, and 
-                       machine learning. I am currently working on getting better at all of these aspects, and this is a beginning project for web development. I am currently a freshman 
-                       at Mission San Jose High school. My other hobbies and interests include swimming, playing videogames, and some chess.
-                   </p>
-                   </div>
-               </aside>
-            </div>
-        </section>
-
-        <footer id="footer">
-            <p>Nicholas Zhang, Copyright © 2021</p>
-        </footer>
-
-    </body>
+</body>
 
 </html>
